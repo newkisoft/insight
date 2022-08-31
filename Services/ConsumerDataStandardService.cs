@@ -7,7 +7,8 @@ public class ConsumerDataStandardService : IConsumerDataStandardService
     private IList<Product> products = new List<Product>();
     public ConsumerDataStandardService()
     {
-        products = Builder<Product>.CreateListOfSize(100).Build();
+        products = Builder<Product>.CreateListOfSize(100)
+        .Build();
     }
 
     public int Count()
