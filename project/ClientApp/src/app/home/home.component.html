@@ -1,0 +1,20 @@
+<p>products</p>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Name</th>
+      <th scope="col">effectiveFrom</th>
+      <th scope="col">effectiveTo</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let product of data.data.products" >
+      <th scope="row">{{ product.productId }}</th>
+      <td>{{ product.name }}</td>
+      <td>{{ product.effectiveFrom }}</td>
+      <td>{{ product.effectiveTo }}</td>
+    </tr>
+  </tbody>
+</table>
